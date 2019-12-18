@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #F5F5F5#F5F5F5;" 
+  xmlns="http://javafx.com/javafx/10.0.1" 
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.loopa.controller.ProfileController">
+  <children>
+    <Separator orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <GridPane focusTraversable="true" layoutX="50.0" layoutY="75.0" prefHeight="450.0" prefWidth="600.0" AnchorPane.bottomAnchor="70.0">
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+        <Label text="Objeto" textFill="LIGHTSLATEGRAY">
+          <GridPane.margin>
+            <Insets top="10.0" />
+          </GridPane.margin>
+        </Label>
+        <Label text="Categoria" textFill="LIGHTSLATEGRAY" GridPane.columnIndex="1">
+          <GridPane.margin>
+            <Insets left="10.0" top="10.0" />
+          </GridPane.margin>
+        </Label>
+        <Label text="Descrição" textFill="LIGHTSLATEGRAY" GridPane.rowIndex="2">
+          <GridPane.margin>
+            <Insets top="10.0" />
+          </GridPane.margin>
+        </Label>
+        <Label text="Local encontrado" textFill="LIGHTSLATEGRAY" GridPane.rowIndex="4">
+          <GridPane.margin>
+            <Insets top="10.0" />
+          </GridPane.margin>
+        </Label>
+        <Label text="Data encontrado" textFill="LIGHTSLATEGRAY" GridPane.columnIndex="1" GridPane.rowIndex="4">
+          <GridPane.margin>
+            <Insets left="10.0" top="10.0" />
+          </GridPane.margin>
+        </Label>
+        <Label text="Local deixado" textFill="LIGHTSLATEGRAY" GridPane.rowIndex="6">
+          <GridPane.margin>
+            <Insets top="10.0" />
+          </GridPane.margin>
+        </Label>
+        <Label text="Data devolvido" textFill="LIGHTSLATEGRAY" GridPane.columnIndex="1" GridPane.rowIndex="6">
+          <GridPane.margin>
+            <Insets left="10.0" top="10.0" />
+          </GridPane.margin>
+        </Label>
+        <TextField fx:id="tfName" promptText="Objeto" GridPane.rowIndex="1">
+          <GridPane.margin>
+            <Insets bottom="10.0" right="10.0" />
+          </GridPane.margin>
+        </TextField>
+        <ComboBox fx:id="cbCategory" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" />
+          </GridPane.margin>
+        </ComboBox>
+        <TextField fx:id="tfDescription" promptText="Descrição" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+          <GridPane.margin>
+            <Insets bottom="10.0" />
+          </GridPane.margin>
+        </TextField>
+        <TextField fx:id="tfPlaceFound" promptText="Local encontrado" GridPane.rowIndex="5">
+          <GridPane.margin>
+            <Insets bottom="10.0" right="10.0" />
+          </GridPane.margin>
+        </TextField>
+        <DatePicker fx:id="dpDateFound" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+          <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" />
+          </GridPane.margin>
+        </DatePicker>
+        <ComboBox fx:id="cbPlaceLeft" prefWidth="290.0" GridPane.rowIndex="7">
+          <GridPane.margin>
+            <Insets bottom="10.0" right="10.0" />
+          </GridPane.margin>
+        </ComboBox>
+        <DatePicker fx:id="dpDateReturned" disable="true" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+          <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" />
+          </GridPane.margin>
+        </DatePicker>
+        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Limpar" GridPane.rowIndex="10">
+          <GridPane.margin>
+            <Insets bottom="10.0" left="200.0" />
+          </GridPane.margin>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Salvar" GridPane.columnIndex="1" GridPane.rowIndex="10">
+          <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" />
+          </GridPane.margin>
+        </Button>
+      </children>
+    </GridPane>
+    <Label fx:id="lbMessage" alignment="CENTER" layoutX="200.0" layoutY="530.0" prefHeight="17.0" prefWidth="300.0" textFill="DIMGRAY" AnchorPane.bottomAnchor="45.0" />
+  </children>
+</AnchorPane>

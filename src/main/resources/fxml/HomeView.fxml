@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #F5F5F5#F5F5F5;" 
+  xmlns="http://javafx.com/javafx/10.0.1" 
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.loopa.controller.HomeController">
+  <children>
+    <Separator orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <AnchorPane layoutX="50.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #778899#778899;">
+      <children>
+        <Label layoutX="37.0" layoutY="6.0" text="TOTAL DE OBJETOS" textFill="WHITE" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="20.0" />
+        <Label fx:id="lbTotal" alignment="CENTER" layoutX="72.0" layoutY="64.0" text="--" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+          <font>
+            <Font size="60.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="250.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FF0000#FF0000;">
+      <children>
+        <Label layoutX="36.0" layoutY="6.0" text="OBJETOS PERDIDOS" textFill="WHITE" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="20.0" />
+        <Label fx:id="lbLost" alignment="CENTER" layoutX="25.0" layoutY="64.0" text="--" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+          <font>
+            <Font size="60.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="450.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #9ACD32#9ACD32;">
+      <children>
+        <Label layoutX="27.0" layoutY="6.0" text="OBJETOS DEVOLVIDOS" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="20.0" />
+        <Label fx:id="lbReturned" alignment="CENTER" layoutX="25.0" layoutY="64.0" text="--" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+          <font>
+            <Font size="60.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
